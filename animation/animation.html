@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuages Rectangle Animation</title>
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <div class="center">
+        <div class="rectangle">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+            <div id="movingText">Monde des nuages
+
+            <script>
+              const movingText = document.getElementById('movingText');
+              let position = 0;
+              let direction = 1; 
+          
+              function moveText() {
+                position += direction;
+                movingText.style.top = position + 'px';
+          
+                const windowHeight = window.innerHeight;
+                const textHeight = movingText.clientHeight;
+          
+                if (position + textHeight >= windowHeight || position <= 0) {
+                  direction *= -1; // Đảo ngược hướng khi chạm mép trên hoặc dưới
+                }
+          
+                requestAnimationFrame(moveText);
+              }
+          
+              moveText(); // Bắt đầu chuyển động
+            </script>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
