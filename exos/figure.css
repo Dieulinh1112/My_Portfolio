@@ -1,0 +1,50 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+canvas {
+    display: block; /* Assure que le canvas est un bloc, peut-être ajuster selon les besoins */
+    margin: 20px auto; /* Centre le canvas horizontalement avec une marge en haut et en bas */
+}
+
+button {
+    display: block; /* Assure que le bouton est un bloc, peut-être ajuster selon les besoins */
+    margin: 10px auto; /* Centre le bouton horizontalement avec une marge en haut et en bas */
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

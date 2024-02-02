@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive les PingouinS</title>
+</head>
+<body>
+    <h1>Pingouin</h1>
+    <canvas id="monCanvas" width="400" height="400"></canvas>
+    <button id="ajouterPingouin">Ajouter un Pingouin</button>
+
+ <script>
+ 
+                 var gc = document.getElementById('monCanvas');
+                var mc = gc.getContext('2d');
+        function init() {
+            // Écouteur de clic pour le bouton "Ajouter un Pingouin"
+            var boutonAjouterPingouin = document.getElementById('ajouterPingouin');
+            boutonAjouterPingouin.addEventListener('click', ajouterPingouin);
+        }
+
+        function ajouterPingouin() {
+            // Position aléatoire pour le pingouin
+            var x = Math.random() * (gc.width - 50);
+            var y = Math.random() * (gc.height - 50);
+
+            // Charger et dessiner l'image du pingouin
+            var pingouinImage = new Image();
+            pingouinImage.src = 'peingouin.jpeg';
+            pingouinImage.onload = function() {
+                mc.drawImage(pingouinImage, x, y, 50, 50); // Dessiner le pingouin avec une taille de 50x50 pixels
+            };
+        }
+
+        // Appeler la fonction init() lors du chargement de la page
+        window.onload = init;
+    </script>
+</body>
+</html>

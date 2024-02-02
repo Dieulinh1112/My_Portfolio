@@ -1,0 +1,23 @@
+.bloc {
+    width: 300px;
+    height: 200px;
+    background-color: orange; 
+    }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+@media (max-width: 960px) {
+    .bloc {
+        background-color: #0000FF;
+    }
+}
+
+@media (max-width: 480px) {
+    .bloc {
+        background-color: #2ecc71;
+    }
+}

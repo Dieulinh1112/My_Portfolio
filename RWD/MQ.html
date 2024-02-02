@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Web Design</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/icon.jpg" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="MQ.css" rel="stylesheet">
+
+  
+</head>
+
+<body id="page-top">
+
+ <!--/ Nav Star /-->
+ <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll" href="index.html#page-top">Responsive Web Design</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+      aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll active" href="index.html#about">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll" href="index.html#service">Cours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll" href="index.html#work">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll" href="index.html#tuto">Tutoriels</a>
+        </li>       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--/ Nav End /-->
+
+<!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+              <h1 class="intro-title mb-4">Media Queries</h1>
+              <p class="intro-subtitle"><span class="text-slider-items">Marketing et communication</span><strong class="text-slider"></strong></p>
+              <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">En savoir plus</a></p> -->
+            </div>
+        </div>
+        
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+<br>
+    
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p classe="intro" >Les Media Queries sont des outils essentiels pour la création de designs Web réactifs. Elles permettent de définir des règles CSS spécifiques en fonction de la taille de l'écran ou de l'appareil, ce qui permet d'adapter la mise en page de manière dynamique.</p>
+        </section>
+
+        <section id="utilisation">
+            <h2>Utilisation</h2> <!-- Titre de section de niveau 2 pour la section sur l'utilisation des Media Queries -->
+            <p>Les Media Queries sont généralement utilisées dans les feuilles de style CSS pour appliquer des styles différents en fonction des caractéristiques de l'appareil. Par exemple, vous pouvez définir des règles pour les écrans larges, les tablettes, les smartphones, etc.</p> <!-- Paragraphe sur l'utilisation des Media Queries -->
+        </section>
+
+        <section id="exemples">
+            <h2>Exemples</h2> <!-- Titre de section de niveau 2 pour la section des exemples de Media Queries -->
+            <p>Voici quelques exemples de Media Queries couramment utilisées :</p> <!-- Paragraphe présentant quelques exemples -->
+            <pre>
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans de 768px de large ou moins */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles pour les écrans entre 768px et 1024px de large */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles pour les écrans de 1024px de large ou plus */
+            </pre>
+        </section>
+    </main>
+    <a href="#" class="back-to-top" style="display: inline;">
+        <i class="fa fa-chevron-up">
+        
+        </i></a>
+      <div id="preloader"></div>
+    
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/popper/popper.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/counterup/jquery.waypoints.min.js"></script>
+      <script src="lib/counterup/jquery.counterup.js"></script>
+      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+      <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <script src="lib/typed/typed.min.js"></script>
+      <!-- Contact Form JavaScript File -->
+      <script src="contactform/contactform.js"></script>
+    
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+      <div id="resource" class="RC" >   <br>
+        <p>
+          <h3>Ressources supplémentaires</h3>
+        </p>
+          <i>
+              <li><a class="resource" href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">W3Schools - Introduction au RWD</a></li>
+              <li><a class="resource" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">MDN - Conception Web Réactive</a></li>
+          </i>
+        </div>
+        <br>  <br>   
+      <footer>
+        <p>&copy; 2023 Linh Nguyen. Tous droits réservés.</p>
+    </footer>
+    
+
+</body>
+</html>
